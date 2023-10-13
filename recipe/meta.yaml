@@ -1,5 +1,5 @@
 {% set name = "cotengra" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cotengra-{{ version }}.tar.gz
-  sha256: 20855f87c1df6534dd1dad17302ad3a5dcc88a86e38a9ce93117b24545dc38cc
+  sha256: bb32ff61297a512b6a4d6778991a8c903b216f00bbfce753e04df1b5db8b3c99
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/jcmgray/cotengra
+  home: https://cotengra.readthedocs.io/
   summary: Hyper optimized contraction trees for large tensor networks and einsums.
   dev_url: https://github.com/jcmgray/cotengra/
   license: Apache-2.0
