@@ -1,5 +1,5 @@
 {% set name = "cotengra" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cotengra-{{ version }}.tar.gz
-  sha256: dbd2d682d5eb40177246e8646dbabf0235650ca11f4986967b6ea9ee63549273
+  sha256: 69364e1c6d9e100b245f6250af2fc8ddd71899de786f94c7bafcf0a32ecf895d
 
 build:
   noarch: python
