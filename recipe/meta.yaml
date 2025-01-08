@@ -1,5 +1,5 @@
 {% set name = "cotengra" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,18 +7,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cotengra-{{ version }}.tar.gz
-  sha256: a56b921d0339d1397e925a7b69029d3301636d09b99b509368751753bda39d24
+  sha256: 8ad9fabee899ac2f7b72359ace79a5496f15fd89b19049656082ef7773ca2b69
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=45
-    - setuptools-scm >=6.2
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >={{ python_min }}
